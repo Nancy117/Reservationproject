@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="bus.reservationproject.FXMLReservationController">
+   <children>
+      <Label fx:id="Name" layoutX="20.0" layoutY="14.0" text="Name" />
+      <Label fx:id="Gender" layoutX="20.0" layoutY="53.0" text="Gender" />
+      <Label fx:id="Passengers" layoutX="20.0" layoutY="88.0" text="Passengers" />
+      <Label fx:id="destination" layoutX="20.0" layoutY="121.0" text="Destination" />
+      <Label fx:id="Seat" layoutX="20.0" layoutY="156.0" text="Seat" />
+      <Label fx:id="Bus_Type" layoutX="317.0" layoutY="14.0" text="Bus_Type" />
+      <Label fx:id="Doj" layoutX="328.0" layoutY="53.0" text="D.O.J" />
+      <Label fx:id="time" layoutX="328.0" layoutY="88.0" text="Time" />
+      <TextField fx:id="field" layoutX="98.0" layoutY="10.0" />
+      <TextField fx:id="field1" layoutX="98.0" layoutY="50.0" />
+      <TextField fx:id="field2" layoutX="98.0" layoutY="84.0" />
+      <TextField fx:id="field3" layoutX="98.0" layoutY="117.0" />
+      <TextField fx:id="field4" layoutX="98.0" layoutY="152.0" />
+      <TextField fx:id="field5" layoutX="384.0" layoutY="10.0" />
+      <TextField fx:id="date" layoutX="391.0" layoutY="49.0" />
+      <TextField fx:id="field6" layoutX="391.0" layoutY="84.0" />
+      <Button fx:id="add" layoutX="365.0" layoutY="130.0" mnemonicParsing="false" onAction="#AddActionEvent" text="Add" />
+      <Button fx:id="delete" layoutX="440.0" layoutY="130.0" mnemonicParsing="false" onAction="#DeleteActionEvent" text="Delete" />
+      <Button fx:id="details" layoutX="351.0" layoutY="164.0" mnemonicParsing="false" onAction="#DetailsActionEvent" text="Details" />
+      <Button fx:id="next" layoutX="425.0" layoutY="165.0" mnemonicParsing="false" onAction="#NextActionEvent" text="Next" />
+      <TableView fx:id="tableview" layoutY="201.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="gender" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="pass" prefWidth="75.0" text="Passengers" />
+            <TableColumn fx:id="destinatn" prefWidth="75.0" text="Destination" />
+            <TableColumn fx:id="seat" prefWidth="75.0" text="Seat" />
+            <TableColumn fx:id="bustype" prefWidth="75.0" text="Bus_Type" />
+            <TableColumn fx:id="DOJ" prefWidth="75.0" text="D.O.J" />
+            <TableColumn fx:id="Time" prefWidth="75.0" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

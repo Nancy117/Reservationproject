@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="bus.reservationproject.FXMLController">
+    <children>
+        <Button fx:id="button" layoutX="77.0" layoutY="137.0" onAction="#handleButtonAction" text="Login" />
+        <Label fx:id="label" layoutX="46.0" layoutY="169.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="226.0" />
+      <TextField fx:id="username" layoutX="123.0" layoutY="30.0" />
+      <PasswordField fx:id="password" layoutX="123.0" layoutY="75.0" />
+      <Label layoutX="46.0" layoutY="34.0" text="USERNAME" />
+      <Label layoutX="46.0" layoutY="79.0" text="PASSWORD" />
+      <Button layoutX="198.0" layoutY="137.0" mnemonicParsing="false" onAction="#cancelActionPerformed" text="Exit" />
+    </children>
+</AnchorPane>
